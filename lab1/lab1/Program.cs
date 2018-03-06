@@ -1,15 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//Дано целое число, лежащее в диапазоне от 1 до 9999. 
+//Вывести строку — словесное описание данного числа вида "четное двузначное число", "нечетное четырехзначное число" и т.д. 
+
+using System;
 
 namespace lab1
 {
-    class Program
+    class NumberDescription
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            NumberAnalyzer analyzer = new NumberAnalyzer();
+            Console.Write("Введите число в диапазоне [1;9999]: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            string str = string.Empty;
+
+            str = analyzer.Parity(number, str);
+            str = analyzer.CharacterCount(number, str);
+
+            str += "число";
+            Console.WriteLine(str);
+            Console.ReadLine();
         }
     }
 }
+

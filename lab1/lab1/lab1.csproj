@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B3C3A8A2-A24E-4D9C-BC8C-03857F70312C}</ProjectGuid>
+    <ProjectGuid>{038C1C35-128D-4BD9-98C3-BC6D7390B87D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>lab1</RootNamespace>
     <AssemblyName>lab1</AssemblyName>
@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NumberAnalyzer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
